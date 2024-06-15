@@ -1,1 +1,1 @@
-export { GradientElipse } from "./gradientElipse"
+export { GradientElipse } from "./GradientElipse"
