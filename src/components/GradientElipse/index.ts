@@ -1,0 +1,1 @@
+export { GradientElipse } from "./GradientElipse"
