@@ -15,6 +15,10 @@ const inter = Inter({
 export const metadata: Metadata = {
 	title: "Gustavo Silvério",
 	description: "A full-stack developer!",
+	authors: [{ name: "Gustavo Silvério", url: "https://www.gsilverio.com/" }],
+	creator: "Gustavo Silvério",
+	keywords:
+		"Gustavo Silvério, Gustavo Oliveira, developer, desenvolvedor, full-stack, frontend, backend, programador",
 }
 
 export default function RootLayout({
@@ -24,6 +28,28 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="pt-BR">
+			<head>
+				<meta
+					property="og:image"
+					content="https://imgur.com/a/MzpGJfM"
+				/>
+				<meta
+					property="og:site_name"
+					content="Gustavo Silvério | Portfolio"
+				/>
+				<meta
+					property="og:title"
+					content="Gustavo Silvério | Portfolio"
+				/>
+				<meta
+					property="og:description"
+					content="A full-stack developer!"
+				/>
+				<meta
+					property="og:url"
+					content="https://www.gsilverio.com/"
+				/>
+			</head>
 			<body className={inter.className}>
 				<Header />
 				<main className="flex justify-center items-center px-8 max-h-full h-[calc(100dvh-172px)]">
