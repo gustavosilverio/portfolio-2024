@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Home() {
 	return (
-		<div className="animate-fade-in flex flex-col items-center space-y-8 max-w-[454px] w-full">
+		<div className="animate-fade-in flex flex-col items-center space-y-6 max-w-[454px] w-full">
 			<Image
 				src="/images/profile.png"
 				alt="Minha foto de perfil"

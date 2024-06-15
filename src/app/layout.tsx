@@ -5,6 +5,7 @@ import { GradientElipse } from "@/components/GradientElipse"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { CurrentWork } from "@/components/currentWork"
+import { DownloadCurriculum } from "@/components/downloadCurriculum"
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -59,6 +60,7 @@ export default function RootLayout({
 				<Footer />
 				<GradientElipse side="bottom" />
 				<CurrentWork />
+				<DownloadCurriculum />
 			</body>
 		</html>
 	)

@@ -1,6 +1,12 @@
 "use client"
 
-import { Ellipsis, FolderOpenDot, Mail, UserRound } from "lucide-react"
+import {
+	Download,
+	Ellipsis,
+	FolderOpenDot,
+	Mail,
+	UserRound,
+} from "lucide-react"
 import {
 	Drawer,
 	DrawerClose,
@@ -31,32 +37,32 @@ export const Header = () => {
 
 			<nav className="hidden sm:flex">
 				<ul className="flex space-x-5 p-2">
-					<li className="btn-base flex space-x-2 items-center">
+					<li>
 						<Link
 							href="/"
-							className="flex space-x-2 items-center"
+							className="btn-base flex space-x-2 items-center"
 						>
 							<UserRound className="w-4 h-4" />
 							<p>about me</p>
 						</Link>
 					</li>
 
-					<li className="btn-base flex space-x-2 items-center">
+					<li>
 						<Link
 							href="projects"
-							className="flex space-x-2 items-center"
+							className="btn-base flex space-x-2 items-center"
 						>
 							<FolderOpenDot className="w-4 h-4" />
 							<p>projects</p>
 						</Link>
 					</li>
 
-					<li className="btn-base">
+					<li>
 						<a
 							href="mailto:gustavosk290905@gmail.com"
 							target="_blank"
 							rel="noreferrer"
-							className="flex space-x-2 items-center"
+							className="btn-base flex space-x-2 items-center"
 						>
 							<Mail className="w-4 h-4" />
 							<p>contact</p>
@@ -88,7 +94,7 @@ export const Header = () => {
 										className="flex space-x-2 items-center"
 									>
 										<UserRound className="w-4 h-4" />
-										<p>about me</p>
+										<p>sobre mim</p>
 									</Link>
 								</DrawerClose>
 							</li>
@@ -99,7 +105,7 @@ export const Header = () => {
 										className="flex space-x-2 items-center"
 									>
 										<FolderOpenDot className="w-4 h-4" />
-										<p>projects</p>
+										<p>projetos</p>
 									</Link>
 								</DrawerClose>
 							</li>
@@ -113,8 +119,17 @@ export const Header = () => {
 										className="flex space-x-2 items-center"
 									>
 										<Mail className="w-4 h-4" />
-										<p>contact</p>
+										<p>contato</p>
 									</a>
+								</DrawerClose>
+							</li>
+
+							<li className="py-3">
+								<DrawerClose asChild>
+									<button className="flex space-x-2 items-center">
+										<Download className="w-4 h-4" />
+										<p>currículo</p>
+									</button>
 								</DrawerClose>
 							</li>
 						</ul>

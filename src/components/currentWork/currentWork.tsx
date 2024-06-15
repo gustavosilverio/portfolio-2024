@@ -14,7 +14,7 @@ export const CurrentWork = () => {
 					<TooltipTrigger asChild>
 						<button className="btn-base">
 							<span>
-								<BriefcaseBusiness color="#fff" />
+								<BriefcaseBusiness color="#cbd5e1" />
 							</span>
 						</button>
 					</TooltipTrigger>
