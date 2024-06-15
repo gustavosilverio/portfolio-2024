@@ -4,6 +4,7 @@ import "@/styles/globals.css"
 import { GradientElipse } from "@/components/GradientElipse"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { CurrentWork } from "@/components/currentWork"
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -57,6 +58,7 @@ export default function RootLayout({
 				</main>
 				<Footer />
 				<GradientElipse side="bottom" />
+				<CurrentWork />
 			</body>
 		</html>
 	)

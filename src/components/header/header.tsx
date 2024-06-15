@@ -1,12 +1,22 @@
 "use client"
 
+import { Ellipsis, FolderOpenDot, Mail, UserRound } from "lucide-react"
+import {
+	Drawer,
+	DrawerClose,
+	DrawerContent,
+	DrawerHeader,
+	DrawerTitle,
+	DrawerTrigger,
+} from "../ui/drawer"
 import Image from "next/image"
+import Link from "next/link"
 
 export const Header = () => {
 	return (
-		<header className="flex min-h-[104px] px-12 py-6 justify-center lg:px-32 sm:justify-between items-center">
-			<span
-				onClick={() => console.log("open drawer...")}
+		<header className="flex min-h-[104px] px-12 py-6 lg:px-32 justify-between items-center">
+			<Link
+				href="/"
 				className="cursor-pointer"
 			>
 				<Image
@@ -17,17 +27,100 @@ export const Header = () => {
 					alt="Minha logo"
 					quality={100}
 				/>
-			</span>
+			</Link>
 
 			<nav className="hidden sm:flex">
 				<ul className="flex space-x-5 p-2">
-					<li className="btn-base">projects</li>
+					<li className="btn-base flex space-x-2 items-center">
+						<Link
+							href="/"
+							className="flex space-x-2 items-center"
+						>
+							<UserRound className="w-4 h-4" />
+							<p>about me</p>
+						</Link>
+					</li>
 
-					<li className="btn-base">about me</li>
+					<li className="btn-base flex space-x-2 items-center">
+						<Link
+							href="projects"
+							className="flex space-x-2 items-center"
+						>
+							<FolderOpenDot className="w-4 h-4" />
+							<p>projects</p>
+						</Link>
+					</li>
 
-					<li className="btn-base">contact</li>
+					<li className="btn-base">
+						<a
+							href="mailto:gustavosk290905@gmail.com"
+							target="_blank"
+							rel="noreferrer"
+							className="flex space-x-2 items-center"
+						>
+							<Mail className="w-4 h-4" />
+							<p>contact</p>
+						</a>
+					</li>
 				</ul>
 			</nav>
+
+			<Drawer>
+				<DrawerTrigger
+					asChild
+					className="sm:hidden btn-base p-1"
+				>
+					<span>
+						<Ellipsis />
+					</span>
+				</DrawerTrigger>
+				<DrawerContent>
+					<DrawerHeader>
+						<DrawerTitle>Navigation</DrawerTitle>
+						<ul
+							role="list"
+							className="divide-y divide-slate-300"
+						>
+							<li className="py-3 flex space-x-2 items-center">
+								<DrawerClose asChild>
+									<Link
+										href="/"
+										className="flex space-x-2 items-center"
+									>
+										<UserRound className="w-4 h-4" />
+										<p>about me</p>
+									</Link>
+								</DrawerClose>
+							</li>
+							<li className="py-3 flex space-x-2 items-center">
+								<DrawerClose asChild>
+									<Link
+										href="projects"
+										className="flex space-x-2 items-center"
+									>
+										<FolderOpenDot className="w-4 h-4" />
+										<p>projects</p>
+									</Link>
+								</DrawerClose>
+							</li>
+
+							<li className="py-3">
+								<DrawerClose asChild>
+									<a
+										href="mailto:gustavosk290905@gmail.com"
+										target="_blank"
+										rel="noreferrer"
+										className="flex space-x-2 items-center"
+									>
+										<Mail className="w-4 h-4" />
+										<p>contact</p>
+									</a>
+								</DrawerClose>
+							</li>
+						</ul>
+					</DrawerHeader>
+				</DrawerContent>
+			</Drawer>
 		</header>
 	)
 }

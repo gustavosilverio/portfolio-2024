@@ -9,6 +9,10 @@
 	color: #cbd5e1;
 }
 
+:focus-visible {
+	outline: none;
+}
+
 /* width */
 ::-webkit-scrollbar {
 	width: 8px;
@@ -41,7 +45,7 @@ img {
 
 @layer components {
 	.btn-base {
-		@apply py-2 px-3 transition ease-in-out duration-300 cursor-pointer hover:bg-slate-900 rounded-2xl;
+		@apply py-2 px-3 transition ease-in-out duration-300 cursor-pointer focus:ring-1 hover:bg-slate-900 rounded-2xl;
 	}
 }
 
