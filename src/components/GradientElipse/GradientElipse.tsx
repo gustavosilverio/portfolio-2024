@@ -1,7 +1,7 @@
 "use client"
 
 import { cn } from "@/lib/utils"
-import { GradientElipseProps } from "@/types/components/GradientElipse"
+import { GradientElipseProps } from "@/types/components/gradientElipse"
 
 export const GradientElipse = ({ side }: GradientElipseProps) => {
 	return (
