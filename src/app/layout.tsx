@@ -1,7 +1,9 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import "@/assets/styles/globals.css"
-import { GradientElipse } from "@/components/GradientElipse"
+import "@/styles/globals.css"
+import { GradientElipse } from "@/components/gradientElipse"
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -23,7 +25,11 @@ export default function RootLayout({
 	return (
 		<html lang="pt-BR">
 			<body className={inter.className}>
-				{children}
+				<Header />
+				<main className="flex justify-center items-center px-8 max-h-full h-[calc(100dvh-172px)]">
+					{children}
+				</main>
+				<Footer />
 				<GradientElipse side="bottom" />
 			</body>
 		</html>
