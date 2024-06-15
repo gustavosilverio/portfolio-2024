@@ -4,6 +4,9 @@ import {
 	Download,
 	Ellipsis,
 	FolderOpenDot,
+	Github,
+	Instagram,
+	Linkedin,
 	Mail,
 	UserRound,
 } from "lucide-react"
@@ -30,12 +33,12 @@ export const Header = () => {
 					width={40}
 					height={40}
 					priority
-					alt="Minha logo"
+					alt="My logo"
 					quality={100}
 				/>
 			</Link>
 
-			<nav className="hidden sm:flex">
+			<nav className="hidden lg:flex">
 				<ul className="flex space-x-5 p-2">
 					<li>
 						<Link
@@ -74,7 +77,7 @@ export const Header = () => {
 			<Drawer>
 				<DrawerTrigger
 					asChild
-					className="sm:hidden btn-base p-1"
+					className="lg:hidden btn-base p-1"
 				>
 					<span>
 						<Ellipsis />
@@ -94,7 +97,7 @@ export const Header = () => {
 										className="flex space-x-2 items-center"
 									>
 										<UserRound className="w-4 h-4" />
-										<p>sobre mim</p>
+										<p>about me</p>
 									</Link>
 								</DrawerClose>
 							</li>
@@ -105,7 +108,7 @@ export const Header = () => {
 										className="flex space-x-2 items-center"
 									>
 										<FolderOpenDot className="w-4 h-4" />
-										<p>projetos</p>
+										<p>projects</p>
 									</Link>
 								</DrawerClose>
 							</li>
@@ -119,7 +122,7 @@ export const Header = () => {
 										className="flex space-x-2 items-center"
 									>
 										<Mail className="w-4 h-4" />
-										<p>contato</p>
+										<p>contact</p>
 									</a>
 								</DrawerClose>
 							</li>
@@ -128,11 +131,39 @@ export const Header = () => {
 								<DrawerClose asChild>
 									<button className="flex space-x-2 items-center">
 										<Download className="w-4 h-4" />
-										<p>currículo</p>
+										<p>curriculum</p>
 									</button>
 								</DrawerClose>
 							</li>
 						</ul>
+						<div className="flex space-x-4 mt-2">
+							<a
+								href="https://github.com/GustavoSilverio"
+								target="_blank"
+								rel="noreferrer"
+								className="btn-base bg-[#0d1117] rounded-xl p-4 w-full flex justify-center"
+							>
+								<Github color="#cbd5e1" />
+							</a>
+
+							<a
+								href="https://www.linkedin.com/in/gustavosilverioo/"
+								target="_blank"
+								rel="noreferrer"
+								className="btn-base bg-[#0a66c2] rounded-xl p-4 w-full flex justify-center"
+							>
+								<Linkedin color="#cbd5e1" />
+							</a>
+
+							<a
+								href="https://www.instagram.com/sotzzz/"
+								target="_blank"
+								rel="noreferrer"
+								className="btn-base bg-gradient-to-tr from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-xl p-4 w-full flex justify-center"
+							>
+								<Instagram color="#020617" />
+							</a>
+						</div>
 					</DrawerHeader>
 				</DrawerContent>
 			</Drawer>
