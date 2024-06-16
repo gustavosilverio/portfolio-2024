@@ -71,33 +71,37 @@ export const Project = ({
 						hidden: !externalLink && !githubRepo,
 					})}
 				>
-					<a
-						href={externalLink}
-						rel="noreferrer"
-						target="_blank"
-						className={cn(
-							"flex justify-center transition ease-in-out duration-300 rounded-[6px] bg-slate-300 hover:bg-slate-50 w-full px-6 py-[6px]",
-							{
-								hidden: !externalLink,
-							}
-						)}
-					>
-						<ExternalLink color="#020617" />
-					</a>
+					{externalLink && (
+						<a
+							href={externalLink}
+							rel="noreferrer"
+							target="_blank"
+							className={cn(
+								"flex justify-center transition ease-in-out duration-300 rounded-[6px] bg-slate-300 hover:bg-slate-50 w-full px-6 py-[6px]",
+								{
+									hidden: !externalLink,
+								}
+							)}
+						>
+							<ExternalLink color="#020617" />
+						</a>
+					)}
 
-					<a
-						href={githubRepo}
-						rel="noreferrer"
-						target="_blank"
-						className={cn(
-							"flex justify-center transition ease-in-out duration-300 rounded-[6px] bg-[#0D1117] hover:bg-[#050608] w-full px-6 py-[6px]",
-							{
-								hidden: !githubRepo,
-							}
-						)}
-					>
-						<Github color="#F1F5F9" />
-					</a>
+					{githubRepo && (
+						<a
+							href={githubRepo}
+							rel="noreferrer"
+							target="_blank"
+							className={cn(
+								"flex justify-center transition ease-in-out duration-300 rounded-[6px] bg-[#0D1117] hover:bg-[#050608] w-full px-6 py-[6px]",
+								{
+									hidden: !githubRepo,
+								}
+							)}
+						>
+							<Github color="#F1F5F9" />
+						</a>
+					)}
 				</CardFooter>
 			</div>
 		</Card>
