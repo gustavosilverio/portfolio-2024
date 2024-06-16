@@ -30,7 +30,9 @@ export const Project = ({
 				<TooltipProvider>
 					<Tooltip delayDuration={0}>
 						<TooltipTrigger asChild>
-							<CardTitle className="truncate">{name}</CardTitle>
+							<CardTitle className="truncate leading-tight">
+								{name}
+							</CardTitle>
 						</TooltipTrigger>
 						<TooltipContent side="bottom">{name}</TooltipContent>
 					</Tooltip>
