@@ -28,10 +28,7 @@ export const Project = ({
 		<Card className="shadow-base flex flex-col justify-between px-4 py-3 rounded-[8px] bg-slate-900 max-w-[324px] w-full min-h-[324px] max-h-[324px]">
 			<CardHeader className="p-0">
 				<TooltipProvider>
-					<Tooltip
-						disableHoverableContent
-						delayDuration={0}
-					>
+					<Tooltip delayDuration={0}>
 						<TooltipTrigger asChild>
 							<CardTitle className="truncate">{name}</CardTitle>
 						</TooltipTrigger>
@@ -39,10 +36,7 @@ export const Project = ({
 					</Tooltip>
 				</TooltipProvider>
 				<TooltipProvider>
-					<Tooltip
-						disableHoverableContent
-						delayDuration={0}
-					>
+					<Tooltip delayDuration={0}>
 						<TooltipTrigger asChild>
 							<CardDescription
 								className={cn({

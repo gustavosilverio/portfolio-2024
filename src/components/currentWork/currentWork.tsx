@@ -8,7 +8,7 @@ import { BriefcaseBusiness } from "lucide-react"
 
 export const CurrentWork = () => {
 	return (
-		<div className="hidden lg:flex fixed bottom-[16px] left-[26px]">
+		<div className="hidden z-50 lg:flex fixed bottom-[16px] left-[26px]">
 			<TooltipProvider>
 				<Tooltip delayDuration={0}>
 					<TooltipTrigger asChild>

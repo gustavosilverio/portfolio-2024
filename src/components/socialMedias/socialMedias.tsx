@@ -8,7 +8,7 @@ import { Github, Instagram, Linkedin } from "lucide-react"
 
 export const SocialMedias = () => {
 	return (
-		<div className="hidden lg:flex flex-col gap-4 fixed bottom-[64px] left-[30px]">
+		<div className="hidden z-50 lg:flex flex-col gap-4 fixed bottom-[64px] left-[30px]">
 			<TooltipProvider>
 				<Tooltip delayDuration={0}>
 					<TooltipTrigger asChild>

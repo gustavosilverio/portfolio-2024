@@ -5,18 +5,24 @@ import {
 	TooltipTrigger,
 } from "@ui/tooltip"
 import { Download } from "lucide-react"
+import Link from "next/link"
 
 export const DownloadCurriculum = () => {
 	return (
-		<div className="hidden lg:flex fixed bottom-[16px] right-[26px]">
+		<div className="hidden lg:flex z-50 fixed bottom-[16px] right-[26px]">
 			<TooltipProvider>
 				<Tooltip delayDuration={0}>
 					<TooltipTrigger asChild>
-						<button className="btn-base">
+						<Link
+							className="btn-base"
+							prefetch={false}
+							href="/documents/curriculum.pdf"
+							target="_blank"
+						>
 							<span>
 								<Download color="#cbd5e1" />
 							</span>
-						</button>
+						</Link>
 					</TooltipTrigger>
 					<TooltipContent side="left">
 						<p>Download my curriculum!</p>
