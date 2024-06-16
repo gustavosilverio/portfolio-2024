@@ -20,12 +20,12 @@ export default function Home() {
 					<h1 className="text-3xl font-bold">
 						Hey there,
 						<br />
-						I'am Gustavo Silvério!
+						I'm Gustavo Silvério!
 					</h1>
 
 					<p className="leading-5">
-						I'am a full-stack web developer from São Paulo, Brasil,
-						I work with web developmenting for 2 years.
+						I'am a full-stack dev from São Paulo, Brasil, I work
+						with web developing for 2 years.
 					</p>
 				</div>
 			</div>
