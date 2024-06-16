@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation"
 export const Footer = () => {
 	const actualYear = new Date().getFullYear()
 	const pathName = usePathname()
-	console.log(pathName)
 
 	return (
 		<footer

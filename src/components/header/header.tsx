@@ -135,10 +135,15 @@ export const Header = () => {
 
 							<li className="py-3">
 								<DrawerClose asChild>
-									<button className="flex space-x-2 items-center">
+									<Link
+										className="flex space-x-2 items-center"
+										prefetch={false}
+										href="/documents/curriculum.pdf"
+										target="_blank"
+									>
 										<Download className="w-4 h-4" />
 										<p>curriculum</p>
-									</button>
+									</Link>
 								</DrawerClose>
 							</li>
 						</ul>
