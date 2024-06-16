@@ -16,7 +16,7 @@ const Projects = () => {
 				</div>
 			) : (
 				<div
-					className={cn("grid gap-8 overflow-x-hidden pr-2", {
+					className={cn("grid gap-8 overflow-x-hidden lg:pr-2", {
 						"lg:grid-cols-3 lg:h-[calc(100dvh-172px)]":
 							projects.length > 3,
 						"lg:flex": projects.length <= 3,

@@ -5,7 +5,7 @@ export const MainContainer = ({ children, className }: MainContainerProps) => {
 	return (
 		<div
 			className={cn(
-				"animate-fade-in flex justify-center items-center px-8 max-h-full h-[calc(100dvh-172px)]",
+				"animate-fade-in flex justify-center items-center px-3 md:px-8 max-h-full h-[calc(100dvh-172px)]",
 				className
 			)}
 		>
