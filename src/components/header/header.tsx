@@ -20,10 +20,16 @@ import {
 } from "../ui/drawer"
 import Image from "next/image"
 import Link from "next/link"
+import { cn } from "@/lib/utils"
 
 export const Header = () => {
 	return (
-		<header className="flex min-h-[104px] px-12 py-6 lg:px-32 justify-between items-center">
+		<header
+			className={cn(
+				"sticky top-0 flex min-h-[104px] px-12 py-6 lg:px-32 justify-between items-center",
+				"bg-slate-950 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50"
+			)}
+		>
 			<Link
 				href="/"
 				className="cursor-pointer"

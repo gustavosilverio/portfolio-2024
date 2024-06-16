@@ -7,6 +7,7 @@ import { Footer } from "@/components/footer"
 import { CurrentWork } from "@/components/currentWork"
 import { DownloadCurriculum } from "@/components/downloadCurriculum"
 import { SocialMedias } from "@/components/socialMedias"
+import { GoUp } from "@/components/goUp"
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -53,11 +54,10 @@ export default function RootLayout({
 					content="https://www.gsilverio.com/"
 				/>
 			</head>
-			<body className={inter.className}>
+			<body className={`${inter.className} `}>
 				<Header />
-				<main className="flex justify-center items-center px-8 max-h-full h-[calc(100dvh-172px)]">
-					{children}
-				</main>
+				<main>{children}</main>
+				<GoUp />
 				<GradientElipse side="bottom" />
 				<SocialMedias />
 				<CurrentWork />

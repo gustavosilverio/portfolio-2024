@@ -1,0 +1,1 @@
+export { GoUp } from "./goUp"
