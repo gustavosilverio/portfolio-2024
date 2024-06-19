@@ -15,4 +15,5 @@ model Project {
   imageUrl String
   externalLink String?
   githubRepo String?
+  active Boolean @default(true)
 }
