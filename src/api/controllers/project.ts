@@ -1,5 +1,3 @@
-"use server"
-
 import { prisma } from "../services/prisma"
 
 export const getAllProjects = async () => {
