@@ -24,7 +24,7 @@ export default function Home() {
 					</h1>
 
 					<p className="leading-5">
-						I'm a full-stack dev from São Paulo, Brasil, I work with
+						I'm a full stack dev from São Paulo, Brasil, I work with
 						web development for 2 years.
 					</p>
 				</div>
