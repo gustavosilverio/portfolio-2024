@@ -56,7 +56,7 @@ export default function RootLayout({
 					content="https://www.gsilverio.com/"
 				/>
 			</head>
-			<body className={`${inter.className} `}>
+			<body className={`${inter.className}`}>
 				<Header />
 				<main>{children}</main>
 				<GoUp />
