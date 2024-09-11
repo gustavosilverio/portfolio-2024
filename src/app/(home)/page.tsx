@@ -3,20 +3,12 @@
 import { MainContainer } from "@/components/mainContainer/mainContainer"
 import { CircleHelp, X } from "lucide-react"
 import Image from "next/image"
-import { motion, Variants } from "framer-motion"
+import { motion } from "framer-motion"
 import { useState } from "react"
+import { Summary } from "@/components/summary/summary"
 
 export default function Home() {
 	const [showSummary, setShowSummary] = useState(false)
-
-	const itemVariant: Variants = {
-		open: {
-			y: 0,
-			opacity: 1,
-			transition: { type: "spring", stiffness: 300, damping: 24 },
-		},
-		closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
-	}
 
 	return (
 		<MainContainer>
@@ -136,7 +128,7 @@ export default function Home() {
 							</span>
 						</motion.button>
 
-						<motion.div
+						<motion.article
 							className="flex flex-col gap-3 overflow-y-auto h-full mr-4 pr-2"
 							variants={{
 								open: {
@@ -148,79 +140,8 @@ export default function Home() {
 								closed: {},
 							}}
 						>
-							<motion.p
-								variants={itemVariant}
-								transition={{ type: "spring" }}
-							>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sapiente quisquam amet ratione reiciendis hic id, autem incidunt commodi voluptas possimus, nulla accusamus laborum ducimus tempore aliquid obcaecati laudantium doloribus vel dolore porro? At vitae itaque enim reprehenderit praesentium expedita libero impedit. Ab obcaecati id repellat praesentium aspernatur magnam velit expedita! Fuga earum deleniti nisi facere in. Enim dicta numquam cumque tempora asperiores hic dolor error doloremque earum nam commodi iste, perferendis a, illo alias nostrum quae aliquid molestias eaque? Modi, reprehenderit eaque enim accusamus consequatur laborum animi corporis et quam nostrum eum sunt, atque in magnam fugiat ab asperiores.
-							</motion.p>
-							<motion.p
-								variants={itemVariant}
-								transition={{ type: "spring" }}
-							>
-								Some text here!
-							</motion.p>
-							<motion.p
-								variants={itemVariant}
-								transition={{ type: "spring" }}
-							>
-								Some text here!
-							</motion.p>
-							<motion.p
-								variants={itemVariant}
-								transition={{ type: "spring" }}
-							>
-								Some text here!
-							</motion.p>
-							<motion.p
-								variants={itemVariant}
-								transition={{ type: "spring" }}
-							>
-								Some text here!
-							</motion.p>
-							<motion.p
-								variants={itemVariant}
-								transition={{ type: "spring" }}
-							>
-								Some text here!
-							</motion.p>
-							<motion.p
-								variants={itemVariant}
-								transition={{ type: "spring" }}
-							>
-								Some text here!
-							</motion.p>
-							<motion.p
-								variants={itemVariant}
-								transition={{ type: "spring" }}
-							>
-								Some text here!
-							</motion.p>
-							<motion.p
-								variants={itemVariant}
-								transition={{ type: "spring" }}
-							>
-								Some text here!
-							</motion.p>
-							<motion.p
-								variants={itemVariant}
-								transition={{ type: "spring" }}
-							>
-								Some text here!
-							</motion.p>
-							<motion.p
-								variants={itemVariant}
-								transition={{ type: "spring" }}
-							>
-								Some text here!
-							</motion.p>
-							<motion.p
-								variants={itemVariant}
-								transition={{ type: "spring" }}
-							>
-								Some text here!
-							</motion.p>
-						</motion.div>
+							<Summary />
+						</motion.article>
 					</motion.div>
 				</motion.div>
 			</motion.div>
