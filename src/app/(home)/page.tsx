@@ -91,9 +91,9 @@ export default function Home() {
 					</div>
 				</motion.div>
 
-				<motion.div className="flex flex-col items-center justify-center w-full h-full max-h-[372px] px-16">
+				<motion.div className="flex flex-col items-center justify-center w-full max-w-screen-xl h-full max-h-[372px] px-4 md:px-16">
 					<motion.div
-						className="bg-slate-900 rounded-md w-full h-full p-4 relative"
+						className="bg-gradient-to-br from-slate-950 to-[#3341553D] border border-slate-600 rounded-md w-full h-full p-4 relative"
 						initial={false}
 						variants={{
 							open: {
