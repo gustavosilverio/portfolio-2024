@@ -56,7 +56,7 @@ export default function Home() {
 						</h1>
 
 						<p className="leading-5">
-							A Full Stack developer from São Paulo, Brasil.
+							A Full Stack developer from São Paulo, Brazil.
 							Working with web development for 2 years already.
 						</p>
 
