@@ -11,7 +11,7 @@ export const Summary = () => {
             <P>
                 I'm 19 years old, I'm a Full Stack developer at{" "}
                 <A href="https://tecnologiaunica.com.br/">Tecnologia Unica</A> with 2 years of experience,
-                I'm currently looking to expand my knowledge with new methodologies,
+                and I'm currently looking to expand my knowledge with new methodologies,
                 design patterns, new languages and applying all of this to projects
                 that I create along the way.
             </P>
