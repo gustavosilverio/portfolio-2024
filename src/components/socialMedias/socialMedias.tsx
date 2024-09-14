@@ -59,7 +59,7 @@ export const SocialMedias = () => {
 							className="btn-base p-2 rounded-full bg-gradient-to-tr from-[#833ab4] via-[#fd1d1d] to-[#fcb045]"
 						>
 							<span>
-								<Instagram color="#020617" />
+								<Instagram color="#ffffff" />
 							</span>
 						</a>
 					</TooltipTrigger>

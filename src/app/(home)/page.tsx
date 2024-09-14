@@ -17,7 +17,7 @@ export default function Home() {
 				animate={showSummary ? "open" : "closed"}
 			>
 				<motion.div
-					className="animate-fade-in flex flex-col items-center space-y-6 max-w-[454px] w-full absolute top-auto"
+					className="animate-fade-in flex flex-col items-center space-y-6 px-2 max-w-[454px] w-full absolute top-auto"
 					variants={{
 						open: {
 							opacity: 0,
@@ -129,7 +129,7 @@ export default function Home() {
 						</motion.button>
 
 						<motion.article
-							className="flex flex-col gap-3 overflow-y-auto h-full mr-4 pr-2"
+							className="flex flex-col gap-2 overflow-y-auto h-full mr-4 pr-2"
 							variants={{
 								open: {
 									transition: {
