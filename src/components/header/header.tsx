@@ -172,7 +172,7 @@ export const Header = () => {
 								rel="noreferrer"
 								className="btn-base bg-gradient-to-tr from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-xl p-4 w-full flex justify-center"
 							>
-								<Instagram color="#020617" />
+								<Instagram color="#ffffff" />
 							</a>
 						</div>
 					</DrawerHeader>
