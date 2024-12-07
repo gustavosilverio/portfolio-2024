@@ -32,7 +32,7 @@ export const Summary = () => {
                 <Divider />
 
                 <P>
-                    web scraping, automation, aws, git
+                    web scraping, automation, ubuntu server, git
                 </P>
             </Stack>
         </>
