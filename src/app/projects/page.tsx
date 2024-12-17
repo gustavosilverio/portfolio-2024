@@ -1,12 +1,18 @@
-import { getAllProjects } from "@/api/controllers/project"
 import { MainContainer } from "@/components/mainContainer/mainContainer"
 import { Project } from "@/components/project"
 import { Skeleton } from "@/components/ui/skeleton"
 import { cn } from "@/lib/utils"
+import { ProjectProps } from "@/types/project"
 import { Suspense, use } from "react"
 
+async function getProjects() {
+	const res = await fetch(`${process.env.PROJECTS_URL}/api/projects`)
+	const projects = await res.json() as ProjectProps[] | undefined
+	return projects
+}
+
 const Projects = () => {
-	const projects = use(getAllProjects())
+	const projects = use(getProjects())
 
 	return (
 		<>

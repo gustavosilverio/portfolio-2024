@@ -18,7 +18,7 @@ import {
 	TooltipTrigger,
 } from "../ui/tooltip"
 import { useState } from "react"
-import { ProjectProps } from "@/types/components/project"
+import { ProjectProps } from "@/types/project"
 
 export const Project = ({
 	name,

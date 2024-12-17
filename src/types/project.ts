@@ -6,7 +6,3 @@ export interface ProjectProps {
 	githubRepo: string | null
 	imageUrl: string
 }
-
-export interface ProjectsProps {
-	setProjectsCount: (n: number | undefined) => void
-}
