@@ -1,21 +1,20 @@
 import { MainContainer } from "@/components/mainContainer/mainContainer"
 import { Project } from "@/components/project"
-import { Skeleton } from "@/components/ui/skeleton"
 import { cn } from "@/lib/utils"
 import { ProjectProps } from "@/types/project"
 import { get } from "@vercel/edge-config"
-import { Suspense, use } from "react"
 
 async function getProjects() {
 	const projects = await get("projects") as ProjectProps[]
 	return projects || []
 }
 
-const Projects = () => {
-	const projects = use(getProjects())
+export default async function ProjectsPage() {
+
+	const projects = await getProjects()
 
 	return (
-		<>
+		<MainContainer className="h-auto lg:h-[calc(100dvh-172px)]">
 			{projects?.length === 0 || projects === undefined ? (
 				<div className="flex">
 					<p>No projects to show here!</p>
@@ -38,29 +37,6 @@ const Projects = () => {
 					})}
 				</div>
 			)}
-		</>
-	)
-}
-
-export default function ProjectsPage() {
-	return (
-		<MainContainer className="h-auto lg:h-[calc(100dvh-172px)]">
-			<Suspense
-				fallback={
-					<div className="grid lg:grid-cols-3 gap-8 overflow-x-hidden">
-						{Array.from({ length: 6 }).map((_, index) => {
-							return (
-								<Skeleton
-									key={index}
-									className="h-[324px] w-[324px] rounded-xl"
-								/>
-							)
-						})}
-					</div>
-				}
-			>
-				<Projects />
-			</Suspense>
 		</MainContainer>
 	)
 }
