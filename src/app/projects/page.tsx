@@ -6,14 +6,9 @@ import { cn } from "@/lib/utils"
 import { ProjectProps } from "@/types/project"
 import { get } from "@vercel/edge-config"
 
-async function getProjects() {
-	const projects = await get("projects") as ProjectProps[]
-	return projects || []
-}
-
 export default async function ProjectsPage() {
 
-	const projects = await getProjects()
+	const projects = (await get("projects") || []) as ProjectProps[]
 
 	return (
 		<MainContainer className="h-auto lg:h-[calc(100dvh-172px)]">

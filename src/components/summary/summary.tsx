@@ -143,7 +143,8 @@ const P = ({
     return (
         <motion.p
             className={cn(
-                className
+                className,
+                "text-lg"
             )}
             variants={itemVariant}
             transition={itemTransition}
