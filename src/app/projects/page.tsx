@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+
 import { MainContainer } from "@/components/mainContainer/mainContainer"
 import { Project } from "@/components/project"
 import { cn } from "@/lib/utils"
