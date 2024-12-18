@@ -3,12 +3,12 @@ import { Project } from "@/components/project"
 import { Skeleton } from "@/components/ui/skeleton"
 import { cn } from "@/lib/utils"
 import { ProjectProps } from "@/types/project"
+import { get } from "@vercel/edge-config"
 import { Suspense, use } from "react"
 
 async function getProjects() {
-	const res = await fetch(`${process.env.PROJECTS_URL}/api/projects`)
-	const projects = await res.json() as ProjectProps[] | undefined
-	return projects
+	const projects = await get("projects") as ProjectProps[]
+	return projects || []
 }
 
 const Projects = () => {
