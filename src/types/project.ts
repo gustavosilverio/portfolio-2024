@@ -5,4 +5,5 @@ export interface ProjectProps {
 	externalLink: string | null
 	githubRepo: string | null
 	imageUrl: string
+	active: boolean
 }
