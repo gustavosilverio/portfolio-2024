@@ -11,12 +11,6 @@ import {
 import Image from "next/image"
 import { ExternalLink, Github } from "lucide-react"
 import { cn } from "@/lib/utils"
-import {
-	Tooltip,
-	TooltipContent,
-	TooltipProvider,
-	TooltipTrigger,
-} from "../ui/tooltip"
 import { useState } from "react"
 import { ProjectProps } from "@/types/project"
 
@@ -35,66 +29,36 @@ export const Project = ({
 	return (
 		<Card className="shadow-base flex flex-col justify-between px-4 py-3 rounded-[8px] bg-slate-900 max-w-[324px] w-full min-h-[324px] max-h-[324px]">
 			<CardHeader className="p-0">
-				<TooltipProvider>
-					<Tooltip
-						open={isTooltipOpen.name}
-						onOpenChange={(openState) =>
-							setIsTooltipOpen((old) => ({
-								name: openState,
-								description: old.description,
-							}))
-						}
-						delayDuration={0}
-					>
-						<TooltipTrigger asChild>
-							<CardTitle
-								onClick={() =>
-									setIsTooltipOpen((old) => ({
-										name: true,
-										description: old.description,
-									}))
-								}
-								className="truncate leading-tight"
-							>
-								{name}
-							</CardTitle>
-						</TooltipTrigger>
-						<TooltipContent side="bottom">{name}</TooltipContent>
-					</Tooltip>
-				</TooltipProvider>
-				<TooltipProvider>
-					<Tooltip
-						delayDuration={0}
-						open={isTooltipOpen.description}
-						onOpenChange={(openState) =>
-							setIsTooltipOpen((old) => ({
-								description: openState,
-								name: old.name,
-							}))
-						}
-					>
-						<TooltipTrigger asChild>
-							<CardDescription
-								onClick={() =>
-									setIsTooltipOpen((old) => ({
-										description: true,
-										name: old.name,
-									}))
-								}
-								className={cn({
-									"line-clamp-3": externalLink || githubRepo,
-									"line-clamp-5":
-										!externalLink && !githubRepo,
-								})}
-							>
-								{description}
-							</CardDescription>
-						</TooltipTrigger>
-						<TooltipContent side="bottom">
-							{description}
-						</TooltipContent>
-					</Tooltip>
-				</TooltipProvider>
+				<CardTitle
+					onClick={() =>
+						setIsTooltipOpen((old) => ({
+							name: true,
+							description: old.description,
+						}))
+					}
+					className="truncate leading-tight"
+				>
+					<p title={name}>
+						{name}
+					</p>
+				</CardTitle>
+				<CardDescription
+					onClick={() =>
+						setIsTooltipOpen((old) => ({
+							description: true,
+							name: old.name,
+						}))
+					}
+					className={cn({
+						"line-clamp-3": externalLink || githubRepo,
+						"line-clamp-5":
+							!externalLink && !githubRepo,
+					})}
+				>
+					<p title={description}>
+						{description}
+					</p>
+				</CardDescription>
 			</CardHeader>
 			<div className="flex flex-col gap-3">
 				<CardContent className="p-0">
