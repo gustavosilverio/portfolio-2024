@@ -29,14 +29,14 @@ export default function Home() {
 							scale: 1,
 
 							transition: {
-								delay: .2,
+								delay: 0.2,
 							},
 						},
 					}}
 					transition={{
 						type: "spring",
 						bounce: 0.3,
-						duration: 0.3
+						duration: 0.3,
 					}}
 				>
 					<Image
@@ -96,7 +96,7 @@ export default function Home() {
 								transition: {
 									type: "spring",
 									bounce: 0.3,
-									delay: .2,
+									delay: 0.2,
 								},
 							},
 
@@ -116,10 +116,10 @@ export default function Home() {
 							className="absolute right-2 top-2"
 							onClick={() => setShowSummary(false)}
 							whileHover={{
-								scale: 1.2
+								scale: 1.2,
 							}}
 							transition={{
-								type: 'spring',
+								type: "spring",
 								bounce: 0.3,
 							}}
 						>
@@ -135,7 +135,7 @@ export default function Home() {
 									transition: {
 										delayChildren: 0.65,
 										staggerChildren: 0.05,
-									}
+									},
 								},
 								closed: {},
 							}}

@@ -38,9 +38,7 @@ export const Project = ({
 					}
 					className="truncate leading-tight"
 				>
-					<p title={name}>
-						{name}
-					</p>
+					<p title={name}>{name}</p>
 				</CardTitle>
 				<CardDescription
 					onClick={() =>
@@ -51,13 +49,10 @@ export const Project = ({
 					}
 					className={cn({
 						"line-clamp-3": externalLink || githubRepo,
-						"line-clamp-5":
-							!externalLink && !githubRepo,
+						"line-clamp-5": !externalLink && !githubRepo,
 					})}
 				>
-					<p title={description}>
-						{description}
-					</p>
+					<p title={description}>{description}</p>
 				</CardDescription>
 			</CardHeader>
 			<div className="flex flex-col gap-3">
