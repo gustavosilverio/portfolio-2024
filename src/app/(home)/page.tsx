@@ -57,7 +57,7 @@ export default function Home() {
 
 						<p className="leading-5">
 							A Full Stack developer from São Paulo, Brazil.
-							Working with web development for 2 years already.
+							Working with web development for 3 years already.
 						</p>
 
 						<div className="flex justify-center">
