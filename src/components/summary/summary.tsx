@@ -9,11 +9,10 @@ export const Summary = () => {
 
             <H3>About me 💻</H3>
             <P>
-                I'm 20 years old, I'm a Full Stack developer at{" "}
-                <A href="https://tecnologiaunica.com.br/">Tecnologia Unica</A> with 3 years of experience
-                and I'm currently looking to expand my knowledge with new methodologies,
-                design patterns, new languages and applying all of this to projects
-                that I create along the way.
+                I am 20 years old, Full Stack developer from São Paulo, Brazil who works at{" "}
+                <A href="https://tecnologiaunica.com.br/">Tecnologia Unica</A> with 3 years of experience,
+                I am currently looking to expand my knowledge with new methodologies,
+                new languages ​and applying all of this to the projects I create along the way.
             </P>
 
             <H3>Technologies in my arsenal 🛠️</H3>
