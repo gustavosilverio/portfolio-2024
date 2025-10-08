@@ -9,7 +9,7 @@ export const Summary = () => {
 
             <H3>About me 💻</H3>
             <P>
-                I'm 19 years old, I'm a Full Stack developer at{" "}
+                I'm 20 years old, I'm a Full Stack developer at{" "}
                 <A href="https://tecnologiaunica.com.br/">Tecnologia Unica</A> with 3 years of experience
                 and I'm currently looking to expand my knowledge with new methodologies,
                 design patterns, new languages and applying all of this to projects
