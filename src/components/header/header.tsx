@@ -66,7 +66,7 @@ export const Header = () => {
 						</Link>
 					</li>
 
-					<li>
+					{/*<li>
 						<a
 							href="mailto:gustavosk290905@gmail.com"
 							target="_blank"
@@ -76,7 +76,7 @@ export const Header = () => {
 							<Mail className="w-4 h-4" />
 							<p>contact</p>
 						</a>
-					</li>
+					</li>*/}
 				</ul>
 			</nav>
 
