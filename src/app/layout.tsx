@@ -38,7 +38,7 @@ export default function RootLayout({
 			<head>
 				<meta
 					property="og:image"
-					content="https://i.imgur.com/lC02sAn.png"
+					content="https://res.cloudinary.com/dibhgoygm/image/upload/v1769387989/vwqwz67keofhqmaymd2r.png"
 				/>
 				<meta
 					property="og:site_name"
