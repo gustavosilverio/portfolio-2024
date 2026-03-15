@@ -52,7 +52,7 @@ export const Header = () => {
 							className="btn-base flex space-x-2 items-center"
 						>
 							<UserRound className="w-4 h-4" />
-							<p>about me</p>
+							<p>sobre mim</p>
 						</Link>
 					</li>
 
@@ -62,7 +62,7 @@ export const Header = () => {
 							className="btn-base flex space-x-2 items-center"
 						>
 							<FolderOpenDot className="w-4 h-4" />
-							<p>projects</p>
+							<p>projetos</p>
 						</Link>
 					</li>
 

@@ -15,7 +15,7 @@ export default async function ProjectsPage() {
 			{filteredProjects?.length === 0 ||
 			filteredProjects === undefined ? (
 				<div className="flex">
-					<p>No projects to show here!</p>
+					<p>Sem projetos para mostrar aqui!</p>
 				</div>
 			) : (
 				<div

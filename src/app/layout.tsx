@@ -21,7 +21,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
 	title: "Gustavo Silvério",
-	description: "A full-stack developer!",
+	description: "Um desenvolvedor Full-Stack!",
 	authors: [{ name: "Gustavo Silvério", url: "https://www.gsilverio.com/" }],
 	creator: "Gustavo Silvério",
 	keywords:

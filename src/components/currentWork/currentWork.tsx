@@ -20,7 +20,7 @@ export const CurrentWork = () => {
 					</TooltipTrigger>
 					<TooltipContent side="right">
 						<p>
-							Currently working at{" "}
+							Atualmente trabalho na{" "}
 							<a
 								className="text-[#ef3f44] font-semibold cursor-pointer hover:underline"
 								href="https://tecnologiaunica.com.br/"

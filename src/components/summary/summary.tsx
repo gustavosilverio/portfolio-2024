@@ -5,19 +5,22 @@ import { cn } from "@/lib/utils"
 export const Summary = () => {
 	return (
 		<>
-			<H2>Gustavo Silvério • Full Stack Developer</H2>
+			<H2>Gustavo Silvério • Desenvolvedor Full-Stack</H2>
 
-			<H3>About me 💻</H3>
+			<H3>Sobre mim 💻</H3>
 			<P>
-				I am 20 years old, Full Stack developer from São Paulo, Brazil
-				who works at{" "}
-				<A href="https://tecnologiaunica.com.br/">Tecnologia Unica</A>{" "}
-				with 3 years of experience, I am currently looking to expand my
-				knowledge with new methodologies, new languages and applying all
-				of this to the projects I create along the way.
+				Sou um desenvolvedor Full-Stack focado em transformar problemas complexos em soluções digitais que geram impacto e valor real.
+				Tenho uma forte base técnica e trabalho principalmente com o ecossistema React e .NET (C#).
+				Minha especialidade é projetar e desenvolver aplicações escaláveis e robustas,
+				construindo desde interfaces dinâmicas no frontend até APIs estruturadas em micro-serviços no backend.
+			</P>
+			<P>
+				Prezo muito pela qualidade e arquitetura de software,
+				mantendo o foco em garantir a melhor performance e em facilitar a manutenção contínua da base de código.
+				Trabalho com metodologias ágeis e busco sempre otimizar o fluxo de trabalho, garantindo produtividade e segurança em cada entrega.
 			</P>
 
-			<H3>Technologies in my arsenal 🛠️</H3>
+			<H3>Tecnologias no meu arsenal 🛠️</H3>
 
 			<Stack>
 				<P>

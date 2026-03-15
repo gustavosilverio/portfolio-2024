@@ -50,14 +50,14 @@ export default function Home() {
 
 					<div className="flex flex-col text-center space-y-5">
 						<h1 className="text-3xl font-bold">
-							Hey there,
+							Olá,
 							<br />
-							I'm Gustavo Silvério!
+							Sou Gustavo Silvério!
 						</h1>
 
 						<p className="leading-5">
-							A Full Stack developer from São Paulo, Brazil.
-							Working with web development for 3 years already.
+							Um desenvolvedor Full-Stack de São Paulo, Brasil.
+							Trabalho com desenvolvimento web a 4 anos.
 						</p>
 
 						<div className="flex justify-center">

@@ -25,7 +25,7 @@ export const DownloadCurriculum = () => {
 						</Link>
 					</TooltipTrigger>
 					<TooltipContent side="left">
-						<p>Download my curriculum!</p>
+						<p>Baixe meu currículo!</p>
 					</TooltipContent>
 				</Tooltip>
 			</TooltipProvider>
