@@ -16,7 +16,7 @@ export const DownloadCurriculum = () => {
 						<Link
 							className="btn-base"
 							prefetch={false}
-							href="/documents/curriculum.pdf"
+							href="/documents/GustavoSilverio-Desenvolvedor-FullStack.pdf"
 							target="_blank"
 						>
 							<span>
